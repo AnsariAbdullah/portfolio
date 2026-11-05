@@ -1,5 +1,7 @@
 import Button from "./Button";
+import Container from "./Container";
 
 export {
-	Button
+	Button,
+	Container
 }
