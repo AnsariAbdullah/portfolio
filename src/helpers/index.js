@@ -1,7 +1,5 @@
-import Button from "./Button";
-import Container from "./Container";
+import WindowHeader from "./WindowHeader"
 
 export {
-	Button,
-	Container
+	WindowHeader
 }
