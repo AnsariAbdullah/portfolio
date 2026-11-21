@@ -1,4 +1,3 @@
-import { projects } from "./helpers/data";
 import {
   GlobalStyle,
   Desktop,
@@ -30,7 +29,8 @@ import {
   Clock,
 } from "./styles/Common.styles.js";
 import { WindowHeader } from "./helpers";
-import { About, Hero } from "./components";
+import { About, Contact, Hero } from "./components";
+import { projects } from "./helpers/data.js";
 
 export default function App() {
   return (
@@ -54,7 +54,7 @@ export default function App() {
               </SectionIntro>
               <ProjectGrid>
                 {projects.map((project) => (
-                  <ProjectCard key={project.title}>
+                  <ProjectCard key={projects.title}>
                     <CardTitleBar>
                       <Title>
                         <AppIcon aria-hidden="true">{project.number}</AppIcon>
@@ -108,27 +108,7 @@ export default function App() {
             </ProjectsBody>
           </Window>
 
-          <Window aria-labelledby="contact-heading">
-            <WindowHeader title="Contact.exe" icon="@" />
-            <ContactBody>
-              <div>
-                <SectionHeading id="contact-heading">
-                  Let’s make something good.
-                </SectionHeading>
-                <Copy>
-                  Have a project, an opportunity, or just want to say hello? My
-                  inbox is always open.
-                </Copy>
-              </div>
-              <Button href="mailto:hello@abdullahansari.dev">
-                Send an Email <span aria-hidden="true">→</span>
-              </Button>
-            </ContactBody>
-            <StatusBar>
-              <span>Internet connection: Online</span>
-              <span>No forms required</span>
-            </StatusBar>
-          </Window>
+          <Contact />
         </Page>
       </Desktop>
 
