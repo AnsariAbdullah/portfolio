@@ -2,9 +2,6 @@ import {
   GlobalStyle,
   Desktop,
   Page,
-  Taskbar,
-  TaskLinks,
-  Clock,
 } from "./styles/Common.styles.js";
 import { About, Contact, Footer, Hero, Projects } from "./components";
 
