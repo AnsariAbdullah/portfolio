@@ -1,5 +1,12 @@
 import React from "react";
-import { Button, ContactBody, Copy, SectionHeading, StatusBar, Window } from "../styles/Common.styles";
+import {
+  Button,
+  ContactBody,
+  Copy,
+  SectionHeading,
+  StatusBar,
+  Window,
+} from "../styles/Common.styles";
 import { WindowHeader } from "../helpers";
 
 function Contact() {
